@@ -10,7 +10,7 @@ Store your monthly reports using the FREE NoSQL Database from deta (https://deta
 
 To visualize the monthly spending, a Sankey Chart from Plotly will be implemented.
 
-https://richiegarafola-expensesheet.streamlitapp.com/
+Deployed Dashboard: https://richiegarafola-expensesheet.streamlitapp.com/
  
 ---
 
