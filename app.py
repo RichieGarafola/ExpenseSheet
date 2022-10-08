@@ -128,8 +128,6 @@ if selected == "Data Entry":
             incomes = {income: st.session_state[income] for income in incomes}
             expenses = {expense: st.session_state[expense] for income in expenses}        
             db.insert_period(period, incomes, expenses, comment)
-            # st.write(f"incomes: {incomes}")
-            # st.write(f"expenses: {expenses}")
             st.success("Date Saved!")
         
 ###############
@@ -148,12 +146,6 @@ if selected == "Data Visualization":
             comment = period_data.get('comment')
             expenses = period_data.get('expenses')
             incomes = period_data.get('incomes')
-            
-            # Dummy data 
-            # comment = "Some Comment"
-            # incomes = {'Salary': 1500, 'Blog':50, 'Other Income':10}
-            # expenses = {'Rent':600, 'Utilities':20, 'Groceries': 300,
-            #             'car':100, 'Other Expenses':50, 'Saving': 10}
 
             # Create Metrics 
             total_income = sum(incomes.values())
