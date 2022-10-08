@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 from deta import Deta
 
 # Load the environment variables
