@@ -4,7 +4,6 @@ from deta import Deta
 from dotenv import load_dotenv
 
 # Load the enviornment variables
-# DETA_KEY = 'b044krod_1e6yMm1wXuKDf44VnhLE8MemjosxJDp1'
 load_dotenv(".env")
 DETA_KEY = os.getenv("DETA_KEY")
 
