@@ -3,14 +3,13 @@ import os
 from deta import Deta
 from dotenv import load_dotenv
 
-# Load the enviornment variables
-load_dotenv(".env")
-DETA_KEY = os.getenv("DETA_KEY")
+# Load the environment variables
+DETA_KEY = st.secrets["DETA_KEY"]
 
 # Initialize with a project key
 deta = Deta(DETA_KEY)
 
-# this is how to create/connect to database. 
+# This is how to create/connect a database
 db = deta.Base("monthly_reports")
 
 # Insert the values of a single period into database
